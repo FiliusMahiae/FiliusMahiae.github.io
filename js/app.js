@@ -5,20 +5,17 @@ const url = 'https://uselessfacts.jsph.pl/api/v2/facts/random'; // Reemplaza est
 async function obtenerDatos() {
     try {
 
-        const opciones = {
-            method: 'GET', // Método de la solicitud
-            headers: {
-                'Accept': 'text/plain' // Cabecera que indica que aceptas una respuesta en texto plano
-            }
-        };
-
-        const respuesta = await fetch(url, opciones); // Realizar la solicitud
+        const respuesta = await fetch(url); // Realizar la solicitud
         if (!respuesta.ok) {
             throw new Error('Error en la solicitud a la API');
         }
-        const datos = await respuesta.text(); // Convertir la respuesta a JSON
+        const datos = await respuesta.json(); // Convertir la respuesta a JSON
 
-        document.getElementById('resultado').textContent = datos.split('Source:')[0].trim().replace(/^>\s*/, ''); // Formato legible para el JSON
+        // Transformar el texto
+        let texto = datos['text'];
+        texto = texto.replace(/\/"/g, '"');
+
+        document.getElementById('resultado').textContent = texto;
 
     } catch (error) {
         console.error('Error:', error);

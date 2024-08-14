@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Facts!</title>
+
+    <title>Random Facts - Learn Something New!</title>
+    <meta name="description"
+        content="Explore a vast collection of random, interesting, and fun facts. Discover something new with each click!">
+    <meta name="keywords"
+        content="Random Facts, Fun Facts, Interesting Facts, Learn Facts, Daily Facts, Random Facts Generator">
+    <meta name="author" content="Sergio Mahía">
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Random Facts - Learn Something New!">
+    <meta property="og:description"
+        content="Explore a vast collection of random, interesting, and fun facts. Discover something new with each click!">
+    <meta property="og:image" content="https://example.com/assets/og-image.png">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Random Facts - Learn Something New!">
+    <meta name="twitter:description"
+        content="Explore a vast collection of random, interesting, and fun facts. Discover something new with each click!">
+    <meta name="twitter:image" content="https://example.com/assets/twitter-image.png">
+    <meta name="twitter:site" content="@YourTwitterHandle">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
+
 <body>
     <div id="app_container">
-        <h1>Random Fact</h1>
-        <div id="resultado"></div>
+        <h1 id="title">RANDOM FACTS</h1>
+        <div id="fact_container">
+            <div id="resultado"></div>
+            <button id="new_fact_btn" onclick=obtenerDatos()>Give me a Fact!</button>
+        </div>
     </div>
+
+    <footer id="footer">
+        <p> Made By <a href="mailto: sergio.mahiarello@gmail.com" style="text-decoration: none; color: #777;"><span id="social_name" class="social_icon">Sergio Mahía</span></a></p>
+        
+        <a href="https://www.linkedin.com/in/sergio-mahia/">
+            <img class="social_icon" src="assets/LinkedIn_logo_initials.png" alt="LinkedIn Logo" height="25px" width="25px">
+        </a>
+
+        <a href="https://github.com/FiliusMahiae">
+            <img class="social_icon" src="assets/25231.png" alt="GitHub Logo" height="25px" width="25px">
+        </a>
+    </footer>
 
     <script src="js/app.js"></script>
 </body>
+
 </html>
