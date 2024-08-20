@@ -5,28 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Random Facts - Learn Something New!</title>
-    <meta name="description"
-        content="Explore a vast collection of random, interesting, and fun facts. Discover something new with each click!">
+    <title>Random Facts - Fun, Interesting, and Unbelievable Facts | RandomFactGenerator.com</title>
+    <meta name="description" content="Discover fascinating random facts with every click! From unbelievable facts to weird and fun trivia, RandoFactGenerator.com has it all. Learn something new today!">
+
     <meta name="keywords"
-        content="Random Facts, Fun Facts, Interesting Facts, Learn Facts, Daily Facts, Random Facts Generator">
+        content="Random Facts, Fun Facts, Interesting Facts, Learn Facts, Daily Facts, Random Facts Generator, weird facts, unbelievable facts, facts, random">
     <meta name="author" content="Sergio Mahía">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://randofactgenerator.com/">
 
     <!-- Open Graph para redes sociales -->
     <meta property="og:title" content="Random Facts - Learn Something New!">
-    <meta property="og:description" content="Explore a vast collection of random, interesting, and fun facts. Discover something new with each click!">
-    <!-- <meta property="og:image" content="https://example.com/assets/og-image.png"> -->
-    <!-- <meta property="og:url" content="https://example.com/"> -->
+    <meta property="og:description" content="Discover fascinating random facts with every click! From unbelievable facts to weird and fun trivia, RandoFactGenerator.com has it all. Learn something new today!">
+    <meta property="og:image" content="https://randofactgenerator.com/assets/og-image.png">
+    <meta property="og:url" content="https://randofactgenerator.com/">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Random Facts - Learn Something New!">
-    <meta name="twitter:description" content="Explore a vast collection of random, interesting, and fun facts. Discover something new with each click!">
-    <!-- <meta name="twitter:image" content="https://example.com/assets/twitter-image.png"> -->
-    <!-- <meta name="twitter:site" content="@YourTwitterHandle"> -->
+    <meta name="twitter:description" content="Discover fascinating random facts with every click! From unbelievable facts to weird and fun trivia, RandoFactGenerator.com has it all. Learn something new today!">
+    <meta name="twitter:image" content="https://randofactgenerator.com/assets/og-image.png">
+    <meta name="twitter:site" content="@MahiaSergio">
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://randofactgenerator.com/",
+          "name": "Random Facts - Learn Something New!",
+          "description": "Explore a vast collection of random, interesting, and fun facts. Discover something new with each click!",
+          "publisher": {
+            "@type": "Organization",
+            "name": "RandomFactGenerator"
+          }
+        }
+    </script>
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3064244568877912"
      crossorigin="anonymous"></script>
@@ -39,17 +57,46 @@
             <div id="resultado"></div>
             <button id="new_fact_btn" onclick=obtenerDatos()>Give me a Fact!</button>
         </div>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Random Fact Generator</h2>
+            <p>Hi there! Welcome to Random Fact Generator, your go-to source for discovering something new and exciting every day. I'm Sergio Mahía, a software engineer with a passion for creating innovative solutions that make people's lives easier. Currently, I'm studying Software Engineering, where I'm constantly learning and refining my skills in design, programming, and problem-solving.</p>
+            <p>I built Random Fact Generator to share a collection of fascinating facts that span a wide range of topics — from science and history to the weird and unbelievable. My goal is simple: to entertain and educate you with random facts that spark curiosity and expand your knowledge. I keep the platform fresh with regular updates to ensure there's always something new to discover.</p>
+            <p>With my background in software development and as the founder of my own startup, Nivow Web, I've used my skills in JavaScript, Python, and HTML to create a fun and engaging experience for you. So go ahead, dive in, and enjoy discovering something new with every click!</p>
+        </section>        
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            <h3>What is Random Fact Generator?</h3>
+            <p>Random Fact Generator is a platform where you can discover random facts across different categories. Whether you're looking for fun trivia, historical facts, or scientific discoveries, you'll always learn something new with each click.</p>
+            
+            <h3>Who created this project?</h3>
+            <p>Hi! I'm Sergio Mahía, and I created this project. As a software engineer, I'm passionate about building innovative solutions in technology, and the Random Fact Generator is a reflection of that passion. I love programming and creating engaging user experiences, and this project is just one of the ways I get to share that excitement with others.</p>
+
+            <h3>How often is the content updated?</h3>
+            <p>I personally update the database regularly with new and fascinating facts to keep things fresh and engaging. I'm always on the lookout for interesting additions to the collection, so there's always something new to discover!</p>
+
+            <h3>How does the random fact generation work?</h3>
+            <p>Our platform uses a custom-built API to fetch random facts from a database. Every time you click "Give me a Fact!", the API retrieves a new fact and displays it instantly on the screen.</p>
+
+            <h3>Can I suggest a fact to be included?</h3>
+            <p>Absolutely! I love hearing from users. If you have an interesting fact you'd like to share, feel free to reach out to me via email at <a href="mailto:sergio.mahiarello@gmail.com">sergio.mahiarello@gmail.com</a>. I'll be happy to review it for possible inclusion in the database!</p>
+        
+        </section>
+
     </div>
 
     <footer id="footer">
         <p> Made By <a href="mailto: sergio.mahiarello@gmail.com" style="text-decoration: none; color: #777;"><span id="social_name" class="social_icon">Sergio Mahía</span></a></p>
         
         <a href="https://www.linkedin.com/in/sergio-mahia/">
-            <img class="social_icon" src="assets/LinkedIn_logo_initials.png" alt="LinkedIn Logo" height="25px" width="25px">
+            <img class="social_icon" src="assets/linkedin_logo.png" alt="LinkedIn Logo for Sergio Mahía" height="25px" width="25px">
         </a>
-
+        
         <a href="https://github.com/FiliusMahiae">
-            <img class="social_icon" src="assets/25231.png" alt="GitHub Logo" height="25px" width="25px">
+            <img class="social_icon" src="assets/github_logo.png" alt="GitHub Logo for Sergio Mahía" height="25px" width="25px">
         </a>
     </footer>
 
