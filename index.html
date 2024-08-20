@@ -43,10 +43,46 @@
         }
     </script>
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/og-image.png" as="image">
+    
+    <!-- Critical Inline CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        #app_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        #title {
+            font-size: 34px;
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: 800;
+            text-align: center;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3064244568877912"
+    <script defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3064244568877912"
      crossorigin="anonymous"></script>
 </head>
 
@@ -92,11 +128,11 @@
         <p> Made By<a href="mailto: sergio.mahiarello@gmail.com" style="text-decoration: none; color: #777;"><span id="social_name" class="social_icon">Sergio Mahía</span></a></p>
         
         <a href="https://www.linkedin.com/in/sergio-mahia/">
-            <img class="social_icon" src="assets/linkedin_logo.png" alt="LinkedIn Logo for Sergio Mahía" height="25px" width="25px">
+            <img class="social_icon" src="assets/linkedin_logo.webp" alt="LinkedIn Logo for Sergio Mahía" height="25px" width="25px" loading="lazy">
         </a>
         
         <a href="https://github.com/FiliusMahiae">
-            <img class="social_icon" src="assets/github_logo.png" alt="GitHub Logo for Sergio Mahía" height="25px" width="25px">
+            <img class="social_icon" src="assets/github_logo.webp" alt="GitHub Logo for Sergio Mahía" height="25px" width="25px" loading="lazy">
         </a>
     </footer>
 
